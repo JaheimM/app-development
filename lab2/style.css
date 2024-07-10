@@ -40,24 +40,37 @@ img{
 @media screen and (max-width: 900px) {
     .grid-container {
         background-color: coral;
+        width: 80%;
         grid-template-columns: auto;
+    }
+
+    .content {
+        grid-column: span 2;
+    }
+    .blog {
+        grid-column: span 3;
     }
 }
 
 /*-------Main container ------- */
-.header-continaer {
+.header-container {
     background-color: palegreen;
     color: white;
+    display: flex;
 }
 
 .header-container > div {
     padding: 20px;
 }
 
+.header-container > div:nth-child(3) {
+    margin-left: auto;
+}
+
 .intro-container {
     display: grid;
     height: 300px;
-    grid-template-columns: 20% 60% 30%;
+    grid-template-columns: 20% 50% 30%;
 }
 
 .footer {
@@ -79,5 +92,18 @@ img{
 .blog {
     background-color: green;
 }
+
+.footer {
+    background-color: rgb(50, 20, 50);
+    color: white;
+    height: 200px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+footer > div {
+    border: solid pink 2px;
+}
+
 
 
