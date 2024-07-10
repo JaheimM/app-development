@@ -1,0 +1,83 @@
+*, *::before, *::after {
+    box-sizing: border-box;  
+}
+
+html {
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+/*-------Grid------ */
+img{ 
+    display: block;
+    height: 100%;
+    width: 100%; 
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns:  auto auto;
+    margin: 20px auto;
+    background-color: rgb(120, 20%, 210);
+    box-shadow: 1px 1px 3px gray;
+}
+
+.img-container {
+    margin: 10px;
+    border: solid black 2px;
+}
+
+/*-------Media Query---------*/
+@media screen and (max-width: 1200px) {
+    .grid-container {
+        background-color: pink;
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .grid-container {
+        background-color: coral;
+        grid-template-columns: auto;
+    }
+}
+
+/*-------Main container ------- */
+.header-continaer {
+    background-color: palegreen;
+    color: white;
+}
+
+.header-container > div {
+    padding: 20px;
+}
+
+.intro-container {
+    display: grid;
+    height: 300px;
+    grid-template-columns: 20% 60% 30%;
+}
+
+.footer {
+    background-color: seagreen;
+    color: white;
+    height: 200px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.nav-menu {
+    background-color: pink;
+}
+
+.content {
+    background-color: blue;
+}
+
+.blog {
+    background-color: green;
+}
+
+
