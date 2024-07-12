@@ -40,28 +40,32 @@ img{
 @media screen and (max-width: 900px) {
     .grid-container {
         background-color: coral;
+        width: 80%;
         grid-template-columns: auto;
     }
 
     .content {
-
+        grid-column: span 2;
     }
 
-}
+    }
+    .blog {
+        grid-column: span 3;
+    }
 
 /*-------Main container ------- */
 .header-container {
     background-color: palegreen;
     color: white;
     display: flex;
-    width: 100%;
 }
 
 .header-container > div {
     padding: 20px;
 }
 
-.header-container > div:nth-child(1) {
+
+.header-container > div:nth-child(3) {
     margin-left: auto;
 }
 
@@ -90,5 +94,18 @@ img{
 .blog {
     background-color: green;
 }
+
+.footer {
+    background-color: rgb(50, 20, 50);
+    color: white;
+    height: 200px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+footer > div {
+    border: solid pink 2px;
+}
+
 
 
