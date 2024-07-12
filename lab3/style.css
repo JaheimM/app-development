@@ -1,0 +1,154 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100vh;
+}
+
+.title {
+    text-align: center;
+    color: magenta;
+    margin-top: 100px;
+}
+
+/* --------------Shapes--------- */
+.shapeContainer {
+    width: 800px;
+    margin: 20px auto;
+    background-color: coral;
+    padding: 20px;
+    text-align: center;
+}
+
+.shapeDiv {
+    width: 200px;
+}
+
+.square {
+    width: 200px;
+    background-color: aqua;
+}
+
+.rectangle {
+    width: 400px;
+    background-color: chartreuse;
+}
+
+.circle {
+    width: 200px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.square, .rectangle, .circle, .shapeDiv {
+    height: 200px;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 10%;
+    margin: 20px auto;
+}
+
+/* -------------Collapsible Nav Menu------------- */
+.header-container, .navMenu {
+    background-color: palegreen;
+    color: white;
+    display: flex;
+    width: 100%;
+}
+
+.header-container > div:hover, .navMenu > div:hover {
+    cursor: pointer;
+}
+
+.header-container > div, .navMenu > div {
+    padding: 20px;
+}
+
+.header-container > div:nth-child(2) {
+    margin-left: auto;
+}
+
+.navMenu {
+    display: none;
+}
+
+.navMenu > div:nth-child(2) {
+    margin-left: auto;
+}
+
+.headerNav {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+}
+
+.collapseMenu {
+    background-color: rgba(89, 184, 86, 0.5);
+    padding: 20px;
+    display: none;
+}
+
+.collapse {
+    display: block;
+}
+
+.collapseMenu > div {
+    color: white;
+}
+
+.collapseMenu > div:hover {
+    border-bottom: white 1px ridge;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+    .header-container {
+        display: none;
+    }
+    .navMenu {
+        display: flex;
+    }
+}
+
+/* ---------- Modal Window --------- */
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.card {
+    width: 200px;
+    width: solid 2px gray;
+    cursor: pointer;
+}
+
+.card:hover {
+    border: black 2px solid;
+    transform: scale(1.1);
+}
+
+.modalWindow {
+    background-color: rgba(30, 30, 30, 0.8);
+    position: fixed;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    display: none;
+}
+
+.modalContent {
+    width: 60%;
+    margin: 20% auto;
+    background-color: white;
+    display: flex;
+}
+
+.closeModal:hover {
+    cursor: pointer;
+}

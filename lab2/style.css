@@ -42,22 +42,33 @@ img{
         background-color: coral;
         grid-template-columns: auto;
     }
+
+    .content {
+
+    }
+
 }
 
 /*-------Main container ------- */
-.header-continaer {
+.header-container {
     background-color: palegreen;
     color: white;
+    display: flex;
+    width: 100%;
 }
 
 .header-container > div {
     padding: 20px;
 }
 
+.header-container > div:nth-child(1) {
+    margin-left: auto;
+}
+
 .intro-container {
     display: grid;
     height: 300px;
-    grid-template-columns: 20% 60% 30%;
+    grid-template-columns: 20% 50% 30%;
 }
 
 .footer {
