@@ -47,17 +47,33 @@ img{
     .content {
         grid-column: span 2;
     }
-
-    }
+    
     .blog {
         grid-column: span 3;
     }
+}
+/*--------- Smartphone view -------*/
+@media screen and (max-width: 600px) {
+    .nav-menu {
+        grid-column: span 3;
+    }
+
+    .content {
+        grid-column: span 3;
+    }
+    
+    .blog {
+        grid-column: span 3;
+    }
+    
+}
 
 /*-------Main container ------- */
 .header-container {
     background-color: palegreen;
     color: white;
     display: flex;
+    width: 100%;
 }
 
 .header-container > div {
