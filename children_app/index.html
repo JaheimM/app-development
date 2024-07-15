@@ -13,9 +13,9 @@
      <header>
          <nav class="nav-bar">   
             <a href="#"><h1>DREAM LEARN</h1></a>
-            <a href="#" alt="About">About</a>
-            <a href="#" alt="Learn">Learn</a>
-            <a href="#" alt="Contact Us">Contact Us</a>
+            <a href="#about" alt="About">About</a>
+            <a href="#cards" alt="Learn">Learn</a>
+            <a href="#footer" alt="Contact Us">Contact Us</a>
             <a href="#" alt="Account"><img src="./images/account-logo.png" alt="account logo"></a>
             <div class="learn-options">
                 <a href="#" alt="Numbers and Colors">Numbers & Colors</a>
@@ -25,25 +25,43 @@
      </header>
      <!-- Main Content -->
      <main>
-        <section class="about">
+        <section class="about" id="about">
             <div>
             <h1>A Childs Foundation for a <span>Bright</span></h1>
             <h1>Future begins with a <span>DREAM</span></h1>
-            <h1>To</h1>
-            <h1><span>Learn</span></h1>
+            <h1>To <span>LEARN</span></h1>
+            <h1><a href="#cards">></a></h1>
             </div>
         </section>
         <section class="content">
-            <div class="cards">  
-                <a href="#languageandanimals" class="card"><img src="./images/numbers.png" alt="Learn Numbers and Colors"></a>
-                <a href="#" class="card"><img src="./images/colors.png" alt="Learn a New Language and Animals"></a>
-            </div>
+            <div class="cards" id="cards">  
+                <a href="#" >
+                    <div class="card">
+                        <img src="./images/numbers.png" alt="Learn Numbers and Colors">
+                        <h3>Learn Numbers and Animals</h3>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <img src="./images/colors.png" alt="Learn a New Language and Animals">
+                        <h3>Learn Language and Animals</h3>
+                    </div>
+                </a>
+                </div>
         </section>
      </main>
 
      <!-- footer -->
-     <footer>
-        
+     <footer class="footer" id="contact">
+        <section>
+            <h3>Did your child have fun?</h3>
+            <a href="" type="_blank" class="Modal-open"><p>Tell us!</p></a>
+            
+        </section>
+        <section>
+            <h3>Contact us</h3>
+            <p>EMAIL</p>
+        </section>
      </footer>
      <script src="script.js"></script>
 </body>

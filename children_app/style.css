@@ -11,8 +11,11 @@
     scrollbar-width: thin;
 }
 
-body {
+html {
     height: 100vh;
+}
+body {
+    height: 100%;
     margin: 0;
     font-family: "poppins";
     background-color: var(--color-primary);
@@ -29,6 +32,10 @@ a {
     color: white;
     margin-top: auto;
     margin-bottom: auto;
+}
+
+footer {
+    height: 100vh;
 }
 
 .nav-bar img {
@@ -55,6 +62,7 @@ a {
 .content {
     width: 100%;
     height: 100vh;
+    border: black 1px solid;
 }
 
 .cards img {
@@ -67,7 +75,18 @@ a {
     grid-template-columns: 1fr 1fr;
     text-align: center;
     column-gap: 10%;
-    margin: auto 50px;
+    margin: 50px auto;
+    height: 100%;
+    border: 1px black solid;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    box-shadow: 10px 10px 1em black;
 }
 
 .cards a:hover {
@@ -76,6 +95,7 @@ a {
 
 .about {
     height: 100vh;
+    margin-bottom: 5px;
 }
 
 .about div {
@@ -95,12 +115,61 @@ a {
 
 .about h1:nth-child(1) span {
     color: gold;
+    background: linear-gradient(100deg,
+        rgba(174, 134, 37) 25%, 
+        rgb(247, 239, 138) 50%,
+        rgb(210, 172, 71) 75%,
+        rgb(239, 201, 103) 100%
+    ); 
+    background-size: 200% auto;
+    animation: 1.5s glow infinite linear;  
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+   
 }
 
-.about h1:nth-child(4) span {
+.about h1:nth-child(3) span {
     color: white;
 }
 
 .about h1:nth-child(2) span {
     color: white;
+}
+
+.about h1:nth-child(4) {
+    transform: rotate(90deg);
+    animation: 0.8s bounce infinite alternate;
+}
+
+.about h1:nth-child(4):hover {
+    cursor: pointer;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0%) rotate(90deg);
+    }
+    to {
+        transform: translateY(20%) rotate(90deg);
+    }
+}
+
+@keyframes glow {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+/* ------Tablet Media screen ------ */
+@media screen and (max-width: 1200px) {
+
+}
+
+/* ---- MOBILE MEDIA SCREEN----- */
+@media screen and (max-width: 900px) {
+    
 }
