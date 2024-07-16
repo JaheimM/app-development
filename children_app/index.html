@@ -10,19 +10,38 @@
 </head>
 <body>
     <!-- header, nav, logo -->
-     <header>
+     <header class="nav-wrapper">
          <nav class="nav-bar">   
             <a href="#"><h1>DREAM LEARN</h1></a>
             <a href="#about" alt="About">About</a>
             <a href="#cards" alt="Learn">Learn</a>
-            <a href="#footer" alt="Contact Us">Contact Us</a>
+            <a href="#contact" alt="Contact Us">Contact Us</a>
             <a href="#" alt="Account"><img src="./images/account-logo.png" alt="account logo"></a>
             <div class="learn-options">
                 <a href="#" alt="Numbers and Colors">Numbers & Colors</a>
                 <a href="#" alt="New Language and Animals">New Language & Animals</a>
             </div>
          </nav>
+         <div>
+            <button class="nav-menu">
+               MENU
+            </button>
+        </div>
      </header>
+     <aside class="menu">
+        <div class="menu-container">
+            <button class="nav-back">BACK</button>
+        <div class="menu-links">
+            <a href="#about" class="nav-link" alt="About">DREAM LEARN</a>
+            <a href="#cards"  class="nav-link" alt="Learn">LEARN <span> > </span></a>
+            <a href="#footer" class="nav-link"  alt="Contact Us">CONTACT US</a>
+            <div class="learn-options">
+                <a href="#" alt="Numbers and Colors">Numbers & Colors</a>
+                <a href="#" alt="New Language and Animals">New Language & Animals</a>
+            </div>
+        </div>
+        </div>
+     </aside>
      <!-- Main Content -->
      <main>
         <section class="about" id="about">
@@ -54,15 +73,25 @@
      <!-- footer -->
      <footer class="footer" id="contact">
         <section>
-            <h3>Did your child have fun?</h3>
-            <a href="" type="_blank" class="Modal-open"><p>Tell us!</p></a>
-            
+            <div class="testimonial"></div>
+            <h2>Did your child have fun?</h2>
+            <div class="Modal">
+                <div class="modal-inner"></div>
+            </div>
         </section>
         <section>
-            <h3>Contact us</h3>
-            <p>EMAIL</p>
+            <h2>CONTACT@DREAMLEARN.EDU</h2>
+        </section>
+        <section>
+            <h1> <a href="" type="_blank" class="modal-open">TELL US!</a></h1>
         </section>
      </footer>
+
+     <section class="modalWindow">
+        <div class="modalContent">
+          
+      </div>
+       </section>
      <script src="script.js"></script>
 </body>
 </html>
