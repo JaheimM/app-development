@@ -30,13 +30,32 @@ function App() {
       </p>
     </>
   ) */
-
+function Square() {
+  return <button className="square">1</button>;
+}
     return (
       <div>
         <h1 className="title">Tic Tac Toe by 'Jahiem Mcleod'</h1>
-        <button className="square">&#9932;</button>
+
+        <div className="boardcontainer">
+          <div className="board-row">
+              <Square />
+              <Square />
+              <Square />
+            </div>
+            <div className="board-row">   
+              <Square />
+              <Square />
+              <Square />
+            </div>
+                  <div className="board-row">
+                  <Square />
+                  <Square />
+                  <Square />
+                  </div>
+            </div>
       </div>
     );
 }
 
-export default App
+export default App;
