@@ -270,6 +270,15 @@ button:hover {
     height: 32px;
 }
 
+.speech {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
 @keyframes bounce {
     from {
         transform: translateY(0%) rotate(90deg);

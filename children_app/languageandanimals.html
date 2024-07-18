@@ -30,7 +30,7 @@
         <h1>Let's Learn about other Languages through Animals!</h1>
             <h2>Click one of the animals below to get started!</h2>
         <section class="choice-container">
-            <div class="animal" ><img src="images/bear.jpg" alt=""></div>
+            <div class="animal" data-type="Bear" ><img src="images/bear.jpg" alt=""></div>
             <div class="animal" data-type="bull"><img src="images/bull.jpg" alt="" srcset=""></div>
             <div class="animal" data-type="elephant"><img src="images/elephant.png" alt="" srcset=""></div>
             <div class="animal" data-type="goat"><img src="images/goat.jpg" alt="" srcset=""></div>
@@ -76,10 +76,21 @@
      <section class="modalWindow">
         <div class="modalContent">
           <div class="name speech">
-            <h3></h3>
-            <Button id="roar"><img src="./images/auido-icon.png" alt="Play Bear roar"></Button>
-            <button id="en-tts"><img src="./images/auido-icon.png" alt="Play prouniciation in English"></button>
-            <button id="esp-tts"><img src="./images/auido-icon.png" alt="Play Prouniciation in Spanish"></button>
+            <h1 class="closeModal">X</h1>
+            <div>
+                <h1>Bear</h1>
+                <h3>"Bears are big, strong animals that live in many places and like to eat different kinds of food. They usually live alone and have thick fur and sharp claws." </h3>
+            </div>
+            <div>
+                <Button class="roar"> Hear them Roar: <img src="./images/auido-icon.png" alt="Play Bear roar"></Button>
+            </div>
+            
+            
+            <div>
+                <button class="en-tts">(English) Bear <img src="./images/auido-icon.png" alt="Play prouniciation in English"></button>
+                <button class="esp-tts">(Spanish) Oso <img src="./images/auido-icon.png" alt="Play Prouniciation in Spanish"></button>
+            </div>
+           
           </div>
       </div>
        </section>
