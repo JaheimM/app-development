@@ -1,0 +1,69 @@
+ :root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  margin: 0;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.introimg {
+  border: ridge crimson 20px;
+  border-radius: 12px;
+  width: 60%;
+  margin: auto;
+}
+/* ---------- comments.jsx ------------ */
+/* CARD */
+.cardcontainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 300px;
+  border: solid gary 2px;
+  border-radius: 12px;
+  margin: 15px;
+}
+
+.content {
+  font-size: bolder;
+  text-align: center;
+}
+
+.metadata {
+  font-size: italic;
+  color: gray;
+}
+
+.comments {
+  color: darkblue;
+}
+
+.card:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 5px 1px gray;
+  transform: translateY();
+}
+
+.content {
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+
+.metadata {
+  font-style: italic;
+  color: gray;
+}
+
+.comment {
+  color: darkblue;
+}
