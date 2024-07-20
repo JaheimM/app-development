@@ -29,7 +29,7 @@ function App() {
   const submitform = (e) => {
     e.preventDefault()
     // usually info is sent to database
-    alert(`Name: ${inputData.fullname} \nAge: ${inputData.age}`)
+    alert(`Name: ${inputData.fullname} \nAge: ${inputData.age} \nGender: ${inputData.gender} \nSuggestions: ${inputData.usercomments}`)
   }
 
 
@@ -99,12 +99,13 @@ function App() {
                 onChange={handleData} />
               </div>
               <div className="formcontrol">
-                <label htmlFor="gender">Enter age: </label>
+                <label htmlFor="gender">Enter gender: </label>
                 <select  
                 id="gender"
                 placeholder="Male" 
                 name="gender"
                 value={inputData.gender}
+                onChange={handleData}
                 >
                   <option value="female">Female</option>
                   <option value="male">Male</option>
@@ -112,7 +113,20 @@ function App() {
                   <option value="n/a">Prefer not to say</option>
                 </select>
               </div>
-              <div><button type="submit">Submit</button></div>
+              <div className="formcontrol">
+                <label htmlFor="comments">Suggestions? </label>
+                <textarea  
+                id="comments"
+                placeholder="Max 1000 characters" 
+                maxLength={1000}
+                name="usercomments"
+                value={inputData.usercomments}
+                onChange={handleData}
+                />
+                 
+              </div>
+              <div>
+                <button type="submit">Submit</button></div>
           </fieldset>
         </form>
       </section>
