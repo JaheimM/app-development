@@ -1,0 +1,48 @@
+ul, li, Link {
+    list-style-type: none;
+    text-decoration: none;
+    outline: none;
+}
+
+.menu-icon {
+    cursor: pointer;
+    display: none;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+    margin: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 98%;
+}
+
+.active {
+    display: block;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-menu li {
+    margin-right: 1em;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-item {
+        flex-direction: column;
+    }
+}
