@@ -6,9 +6,12 @@ const synth = window.speechSynthesis;
 let menuBtn = document.querySelector(".nav-menu");
 let menu = document.querySelector(".menu");
 let back = document.querySelector(".nav-back");
+let showOptions = document.querySelector(".options");
+let learnOptions = document.querySelector(".learn-options")
 let navLinks = document.querySelector(".nav-link");
 let animals = document.querySelectorAll(".animal");
 let modal = document.querySelector(".modalWindow");
+let openModal = document.querySelector(".modal-open");
 let closeModal = document.querySelector(".closeModal")
 let speech = document.querySelector(".en-tts");
 let spanish = document.querySelector(".esp-tts")
@@ -34,6 +37,9 @@ let toggle = (index, apply) => {
 
 let toggleMenu = () => {
     toggle(menu, "show");
+    if (learnOptions.style.display === "block") {
+        learnOptions.style.display = "none";
+    }
 }
 
 menuBtn.addEventListener("click", toggleMenu)
@@ -116,6 +122,14 @@ const loadVoices = () => {
 
 closeModal.addEventListener("click", () => {
     modal.style.display = "none";
+});
+
+openModal.addEventListener("click", () => {
+    modal.style.display = "block";
+});
+
+showOptions.addEventListener("click", () => {
+    learnOptions.style.display = "block";
 });
 
 /* user clicks outside of modal close the modal */

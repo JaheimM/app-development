@@ -12,7 +12,7 @@
     <!-- header, nav, logo -->
      <header class="nav-wrapper">
          <nav class="nav-bar">   
-            <a href="#"><h1>DREAM LEARN</h1></a>
+            <a href="./index.html"><h1>DREAM LEARN</h1></a>
             <a href="#about" alt="About">About</a>
             <a href="#cards" alt="Learn">Learn</a>
             <a href="#contact" alt="Contact Us">Contact Us</a>
@@ -33,11 +33,11 @@
             <button class="nav-back">BACK</button>
         <div class="menu-links">
             <a href="#about" class="nav-link" alt="About">DREAM LEARN</a>
-            <a href="#cards"  class="nav-link" alt="Learn">LEARN <span> > </span></a>
+            <a class="nav-link options" alt="Learn">LEARN <span> > </span></a>
             <a href="#footer" class="nav-link"  alt="Contact Us">CONTACT US</a>
             <div class="learn-options">
-                <a href="#" alt="Numbers and Colors">Numbers & Colors</a>
-                <a href="#" alt="New Language and Animals">New Language & Animals</a>
+                <a href="./numberscolors.html" alt="Numbers and Colors">Numbers & Colors</a>
+                <a href="./languageandanimals.html" alt="New Language and Animals">New Language & Animals</a>
             </div>
         </div>
         </div>
@@ -54,13 +54,13 @@
         </section>
         <section class="content">
             <div class="cards" id="cards">  
-                <a href="#" >
+                <a href="./numberscolors.html" >
                     <div class="card">
                         <img src="./images/numbers.png" alt="Learn Numbers and Colors">
                         <h3>Learn Numbers and Animals</h3>
                     </div>
                 </a>
-                <a href="#">
+                <a href="./languageandanimals.html">
                     <div class="card">
                         <img src="./images/colors.png" alt="Learn a New Language and Animals">
                         <h3>Learn Language and Animals</h3>
@@ -71,29 +71,34 @@
      </main>
 
      <!-- footer -->
-     <footer class="footer" id="contact">
+     <footer id="footer" class="footer" id="contact">
+            <img src="./images/dream-logo-svg-vector.svg" alt="Dream logo" class="footer-logo">
         <section>
-            <div class="testimonial"></div>
-            <h2>Did your child have fun?</h2>
-            <div class="Modal">
-                <div class="modal-inner"></div>
+            <h2>Questions? Concerns?</h2>
+            <div class="modalWindow">
+                <div class="modalContent homeModal">
+                    <h1 class="closeModal">X</h1>
+                    <form action="">
+                        <input type="text" name="name" placeholder="John Doe">
+                        <input type="text" name="email" placehilder="johndoe@email.com">
+                        <textarea name="message" placeholder="Your message"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
             </div>
         </section>
         <section>
-            <h2>CONTACT@DREAMLEARN.EDU</h2>
+            <h1> <a class="modal-open">CONTACT@DREAMLEARN.EDU</a></h1>
         </section>
-        <section>
-            <h1> <a href="" type="_blank" class="modal-open">TELL US!</a></h1>
-            <div><img src="" alt=""><img src="" alt=""></div>
-            <div><img src="" alt=""><img src="" alt=""></div>
+        <section class="social-links">
+            <a href="https://x.com/" target="_blank"><i class="fa-brands fa-square-x-twitter fa-2xl"></i></a>
+            <a href="https://www.threads.net/?hl=en" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-square-threads fa-2xl"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram fa-2xl"></i></a>
         </section>
      </footer>
 
-     <section class="modalWindow">
-        <div class="modalContent">
-          
-      </div>
-       </section>
      <script src="script.js"></script>
+     <script src="https://kit.fontawesome.com/3f6b557f75.js" crossorigin="anonymous"></script>
 </body>
 </html>

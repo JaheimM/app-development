@@ -98,27 +98,35 @@ button:hover {
     height: 80%;
     border-radius: 8px;
 }
-.cards {
+/* .cards {
     display: grid;
     grid-template-columns: auto auto;
     text-align: center;
     column-gap: 10%;
     height: 100%;
-}
+    width: 100%;
+} */
 
-.card {
+.cards {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-height: 350px;
-    max-width: 350px;
-    min-height: 150px;
-    min-width: 150px;
-    box-shadow: 10px 10px 1em black;
+    flex-direction: row;
 }
 
-.cards a:hover {
+.content {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.card {
+    height: 350px;
+    max-width: 450px;
+    min-height: 150px;
+    min-width: 250px;
+    box-shadow: 10px 10px 1em black;
+    margin: 5px;
+}
+
+.card a:hover {
     cursor: pointer;
 }
 
@@ -141,8 +149,14 @@ button:hover {
     font-size: 48px;
 }
 
+footer img {
+    width: 100%;
+}
 
-
+.social-links i {
+    padding: 3px;
+    margin: auto 100px;
+}
 
 .about h1:nth-child(1) span {
     color: gold;
@@ -178,9 +192,9 @@ button:hover {
 }
 
 .footer {
-    display: grid;
-    grid-template-columns: auto auto;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     text-align: center;
 }
 
@@ -214,6 +228,21 @@ button:hover {
     display: flex;
 }
 
+.homeModal, form {
+    display: flex; 
+    flex-direction: column;
+}
+form input, form textarea {
+    margin: 5px 5px;
+}
+
+form input:nth-child(n+1) {
+    width: 20%;
+}
+
+textarea {
+    resize: vertical;
+}
 .closeModal:hover {
     cursor: pointer;
 }
