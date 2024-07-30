@@ -7,19 +7,64 @@
 body {
     height: 100vh;
     width: 100%;
+    color: white;
 }
 
 html {
     height: 100vh;
 }
 
+section {
+    scroll-snap-type: y mandatory;
+}
+
+.banner {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+section h1 {
+    margin-bottom: 15px;
+    padding: 3px;
+    width: 80%;
+    font-size: clamp(1rem, 10vw, 3rem);
+    font-weight: 600;
+}
+
 .main-wrapper {
     height: 100vh;
     width: 100%;
-    background-image: url("../../assets/Illustration2.png");
+    background-image: url("../../assets/gameIlustration.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+.about-main-wrapper {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../../assets/about.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.works-preview {
+    height: 100vh;
+}
+
+.heading {
+    background-color: black;
+    text-align: center;
+}
+
+.heading h1 {
+    width: 100%;
 }
 
 img {
@@ -28,3 +73,110 @@ img {
     margin: auto;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: lightgray;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+footer {
+    color: black;
+    font-size: 1.2rem;
+}
+
+.social {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    margin: 5px;
+    padding: 3px;
+}
+
+.social ul, .social i {
+    margin: 5px;
+    padding: 3px;
+}
+
+/*------- About styles ------ */
+.about-expanded {
+    display: flex; 
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+.slider-container{
+    width: 40%;
+}
+
+.info {
+    width: 60%;
+    min-width: 50%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info h2, .info p {
+    width: 70%;
+    margin-bottom: 1rem;
+    padding: 3px;
+}
+
+.companies {
+    background-color: white;
+    width: 100%;
+}
+
+hr {
+    color: white;
+}
+
+/* ----embla----- */
+
+.embla {
+    overflow: hidden;
+  }
+  .embla__container {
+    display: flex;
+  }
+  .embla__slide {
+    flex: 0 0 100%;
+    min-width: 0;
+  }
+
+/* -----Sign-up Form----- */
+.signupform {
+    width: 80%;
+  }
+  
+  .formcontrol {
+    margin-top: 20px;
+  }
+  
+  .formcontrol label {
+    margin-right: 20px;
+    display: inline-block;
+    width: 100%;
+  }
+
+  /* cards styles */
+
+.cards-items {
+    display: flex;
+    flex-direction: row;
+}
+
+/* cards-style */
+.card-item {
+    display: flex;
+    flex-direction: column;
+}

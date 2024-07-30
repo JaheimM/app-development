@@ -4,6 +4,10 @@ ul, li, Link {
     outline: none;
 }
 
+a {
+    color: white;
+}
+
 .menu-icon {
     cursor: pointer;
     display: none;
@@ -19,6 +23,7 @@ ul, li, Link {
     top: 0;
     left: 0;
     width: 98%;
+    font-size: clamp(1rem, 2.5vw, 2rem);
 }
 
 .active {
@@ -42,7 +47,15 @@ ul, li, Link {
         display: block;
     }
 
-    .nav-item {
+    .nav-menu {
+        display: none;
+    }
+
+    .nav-menu.active {
+        display: flex;
         flex-direction: column;
+        position: absolute;
+        top: 5vh;
+        right: 0;
     }
 }

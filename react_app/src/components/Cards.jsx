@@ -1,5 +1,7 @@
 import React from 'react'
 import CardItem from './CardItem'
+import img from '../assets/illustration2.png'
+import './pages/Home.css'
 
 function Cards() {
   return (
@@ -7,9 +9,8 @@ function Cards() {
       <div className="card-container">
         <div className="cards-wrapper">
           <ul className='cards-items'>
-            <CardItem />
-            <CardItem />
-            <CardItem />
+          <CardItem image={img} info="The world is a scary place"/>
+          <CardItem image={img} info={'The world is a scary place'}/>
           </ul>
         </div>
       </div>
